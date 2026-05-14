@@ -76,6 +76,47 @@ API_PORT: 8000
 >
 > **Easy-Wav2Lip 目录结构要求**：需包含 `checkpoints/Wav2Lip_GAN.pth`、`checkpoints/mobilenet.pth`、`checkpoints/shape_predictor_68_face_landmarks.dat`。
 
+### 1.1 模型文件下载
+
+本项目依赖以下模型，首次运行前需下载：
+
+#### Wav2Lip 模型
+
+| 文件 | 说明 | 下载地址 |
+|------|------|---------|
+| `Wav2Lip_GAN.pth` | GAN 版权重（推荐） | [百度网盘](https://github.com/Rudrabha/Wav2Lip#usage) / [Google Drive](https://drive.google.com/file/d/1L0JbiVLFHw5ZqFXL3/A/view) |
+| `Wav2Lip.pth` | 原始版权重 | [百度网盘](https://github.com/Rudrabha/Wav2Lip#usage) / [Google Drive](https://drive.google.com/file/d/1L0JbiVLFHw5ZqFXL3/A/view) |
+| `mobilenet.pth` | 人脸检测器 | 同上网盘链接 |
+| `shape_predictor_68_face_landmarks.dat` | 68 点人脸关键点 | [dlib-models](https://github.com/AKSHAYUBHAT/dlib-models/raw/master/shape_predictor_68_face_landmarks.dat) |
+
+将上述文件放入 `Easy-Wav2Lip/checkpoints/` 目录。
+
+#### GFPGAN 人脸增强模型
+
+| 文件 | 说明 | 下载地址 |
+|------|------|---------|
+| `GFPGANv1.4.pth` | GFPGAN 人脸修复权重 | [TencentARC/GFPGAN](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth) |
+
+将 `GFPGANv1.4.pth` 放入 `Easy-Wav2Lip/gfpgan/` 目录。
+
+#### Qwen3-TTS 模型
+
+| 模型 | 说明 | 大小 | 下载地址 |
+|------|------|------|---------|
+| Qwen3-TTS-12Hz-0.6B-CustomVoice | 自定义音色模型（默认） | ~2GB | HuggingFace: `Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice` |
+| Qwen3-TTS-12Hz-0.6B-Base | 基础模型 | ~2GB | HuggingFace: `Qwen/Qwen3-TTS-12Hz-0.6B-Base` |
+| Qwen3-TTS-12Hz-1.7B-CustomVoice | 大尺寸自定义音色 | ~6GB | [ModelScope](https://www.modelscope.cn/models) |
+
+将下载的模型放入 `QwenTTS_Fn2/models/` 目录，目录结构如下：
+
+```
+QwenTTS_Fn2/
+└── models/
+    ├── Qwen3-TTS-12Hz-0.6B-CustomVoice/
+    ├── Qwen3-TTS-12Hz-0.6B-Base/
+    └── ...
+```
+
 ### 2. 启动后端服务
 
 ```bash
