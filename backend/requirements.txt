@@ -1,0 +1,15 @@
+fastapi==0.115.12
+uvicorn==0.32.1
+python-multipart==0.0.20
+pyyaml>=6.0
+numpy>=1.26,<2
+opencv-python-headless>=4.10,<4.13
+scipy>=1.14,<1.18
+librosa==0.10.1
+moviepy==1.0.3
+soundfile==0.12.1
+batch-face
+dlib>=19.24
+qrcode>=7.4
+psutil>=5.9
+pillow>=10.0

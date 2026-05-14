@@ -1,0 +1,104 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ================================
+# Node / Frontend build
+# ================================
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+
+# ================================
+# Environment & secrets
+# ================================
+.env
+.env.local
+.env.*.local
+
+# ================================
+# Data & media
+# ================================
+*.db
+*.sqlite
+*.sqlite3
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# ================================
+# Model weights (download separately)
+# ================================
+*.pth
+*.pkl
+*.dat
+*.pt
+*.onnx
+
+# ================================
+# Uploads & outputs
+# ================================
+uploads/
+outputs/
+temp/
+*.tmp
+
+# ================================
+# GFPGAN model files
+# ================================
+gfpgan/*.pth
+gfpgan/*.pkl
+gfpgan/models/
+
+# ================================
+# IDE
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ================================
+# Backend sub-directories to exclude
+# ================================
+backend/.venv/
+backend/outputs/
+backend/uploads/
+backend/gfpgan/
+backend/__pycache__/
+
+# ================================
+# Misc
+# ================================
+*.bak
+*.backup
+.DS_Store
+Thumbs.db

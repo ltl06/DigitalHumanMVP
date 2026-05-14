@@ -1,0 +1,27 @@
+# ================================================================
+# DigitalHuman MVP - 项目配置文件
+# ================================================================
+# 所有路径请根据实际部署环境修改
+
+# ---- Qwen3-TTS 模型路径 (根据 QwenTTS_Fn2 目录填写) ----
+QWEN_TTS_ROOT: D:/hecheng/QwenTTS_Fn2
+QWEN_MODEL_CUSTOM_VOICE: D:/hecheng/QwenTTS_Fn2/models/Qwen3-TTS-12Hz-1.7B-CustomVoice
+QWEN_MODEL_BASE: D:/hecheng/QwenTTS_Fn2/models/Qwen3-TTS-12Hz-1.7B-Base
+QWEN_MODEL_VOICE_DESIGN: D:/hecheng/QwenTTS_Fn2/models/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+
+# ---- Easy-Wav2Lip 模型路径 ----
+WAV2LIP_ROOT: D:/hecheng/Easy-Wav2Lip
+WAV2LIP_CHECKPOINT: D:/hecheng/Easy-Wav2Lip/checkpoints/Wav2Lip_GAN.pth
+WAV2LIP_MOBILENET: D:/hecheng/Easy-Wav2Lip/checkpoints/mobilenet.pth
+WAV2LIP_PREDICTOR: D:/hecheng/Easy-Wav2Lip/checkpoints/predictor.pkl
+WAV2LIP_MOUTH_DETECTOR: D:/hecheng/Easy-Wav2Lip/checkpoints/mouth_detector.pkl
+GFPGAN_CHECKPOINT: D:/hecheng/Easy-Wav2Lip/checkpoints/GFPGANv1.4.pth
+
+# ---- 文件存储路径 ----
+UPLOAD_DIR: D:/hecheng/DigitalHumanMVP/backend/uploads
+OUTPUT_DIR: D:/hecheng/DigitalHumanMVP/backend/outputs
+
+# ---- 服务端口 ----
+API_HOST: 0.0.0.0
+API_PORT: 8000
+FRONTEND_PORT: 3000
